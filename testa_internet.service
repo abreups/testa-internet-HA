@@ -1,0 +1,11 @@
+[Unit]
+Description=Meu script no boot
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/etc/init.d/testa_internet.sh
+
+[Install]
+WantedBy=multi-user.target
+
